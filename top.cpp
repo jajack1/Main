@@ -5,6 +5,8 @@ using namespace std;
 class StepsConstruct{
 	public:
 	string construct(vector <string> board, int k) {
+		if(board[0][0]=='#') return "";
+		
 		int vis[100][100];
 		memset(vis,0,sizeof(vis));
 		int dx[]={1,-1,0,0};
@@ -29,7 +31,7 @@ class StepsConstruct{
 			
 			if(x==n-1&&y==m-1){
 				if(k==s2.size()) return s2;
-				if((k-s2.size())%2!=0) return "";
+				if((k-s2.size())%2!=0||k<s2.size()) return "";
 				
 				int z = k-s2.size();
 				int len=s2.size()-1;
@@ -79,10 +81,7 @@ class StepsConstruct{
 int main(){
 	StepsConstruct AAA;
 	
-	int t;
-	
-	
-	/*
+	int n;
 	cin >> n;
 	vector<string> s;
 	string s2;
@@ -90,14 +89,14 @@ int main(){
 		cin >> s2;
 		s.push_back(s2);
 	}
-	for(int i=0;i<t;i++){
+	for(int i=0;i<n;i++){
 		cout << s[i] << endl;;
 	}
 	cout << endl;
-	*/
 	
 	
-	cout << AAA.construct(s,12) << endl;
+	
+	cout << AAA.construct(s,6) << endl;
 	
 	return 0;
 }
