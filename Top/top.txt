@@ -14,3 +14,29 @@ for(int i=0;i<n;i++){
 cout << endl;
 
 //////////////////////////////////////
+// 数列と文字列
+
+
+int main(){
+	Robofactory AAA;
+	
+	int a;
+	vector<int> v;
+	for(int i=0;i<4;i++){
+		cin >> a;
+		v.push_back(a);
+	}
+	string s;
+	vector<string> vs;
+	for(int i=0;i<4;i++){
+		cin >> s;
+		vs.push_back(s);
+	}
+	
+	
+	cin >> a;
+	cout << AAA.reveal(v,vs) << endl;
+	
+	return 0;
+}
+///////////////////////////////////////////////////////////
