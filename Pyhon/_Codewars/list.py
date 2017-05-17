@@ -1,3 +1,4 @@
+# http://udemy.benesse.co.jp/development/python-list.html
 def find_multiples(a, b):
     list=[]
     for num in range(int(b/a)):
