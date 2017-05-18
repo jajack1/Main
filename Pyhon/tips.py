@@ -128,3 +128,15 @@ for i in range(a):
 	print F(n)%1000000007
 
 
+
+	
+# 文字列処理
+http://d.hatena.ne.jp/yumimue/20071223/1198407682	
+
+
+	
+	
+	
+	
+	
+	
